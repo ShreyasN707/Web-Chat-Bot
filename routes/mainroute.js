@@ -8,7 +8,7 @@ const { askGemini } = require("../api")
 
 router.route("/")
     .get(async (req, res) => {
-        res.render('index', { reply: '' })
+        res.render('index', { reply })
     })
     .post(async (req, res) => {
         const { prompt } = req.body;
