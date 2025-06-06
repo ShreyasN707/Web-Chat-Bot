@@ -152,7 +152,7 @@
     </form>
 
     <div class="output-box" id="outputBox">
-      <%= reply||' ' %>
+       <%= typeof reply !== 'undefined' ? reply : '' %>
     </div>
 
     <div class="spinner" id="spinner"></div>
