@@ -8,6 +8,7 @@ const { askGemini } = require("../api")
 
 router.route("/")
     .get(async (req, res) => {
+        const reply = await askGemini("say hi")
         res.render('index', { reply })
     })
     .post(async (req, res) => {
