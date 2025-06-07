@@ -6,6 +6,7 @@ const router = express.Router()
 const { askGemini } = require("../api")
 
 
+
 router.route("/")
     .get(async (req, res) => {
         const reply = await askGemini("say hi")
@@ -18,6 +19,7 @@ router.route("/")
         // Render your page and pass reply for display
         res.render('index', { reply });
     });
+
 
 
 module.exports = {
