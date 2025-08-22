@@ -65,7 +65,6 @@ GEMINI_API_KEY=your_api_key_here
 4️⃣ Start the server
 node server.js
 
-App will be live at http://localhost:3000
 
 🎯 Usage
 
